@@ -15,9 +15,3 @@ CREATE TABLE candidates (
     industry_connected BOOLEAN NOT NULL,
     CONSTRAINT fk_party FOREIGN KEY (party_id) REFERENCES parties(id) ON DELETE SET NULL
 );
-
-CREATE TABLE parties (
-    id INTEGER AUTO_INCREMEMT PRIMARY KEY,
-    name VARCHAR(50) NOT NULL,
-    description TE
-)
